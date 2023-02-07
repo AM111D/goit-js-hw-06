@@ -7,7 +7,6 @@ const refs = {
   destroyBtn: document.querySelector('[data-destroy]'),
   collectionBoxesEl: document.querySelector('#boxes')
 };
-// console.log(refs.inputEl);
 
 refs.createBtn.addEventListener('click', onCreateBoxes);
 refs.destroyBtn.addEventListener('click', onRemoveItems);
@@ -16,10 +15,6 @@ function onCreateBoxes(amount) {
   // console.log('test');
   const listCreateItems = [];
   amount = Number(refs.inputEl.value)
-
-  // console.log(amount);
-  // listCreateItems.length = amount;
-  // console.log(amount);
 
 for (let i = 0; i < amount; i += 1) {
 
@@ -35,6 +30,7 @@ for (let i = 0; i < amount; i += 1) {
 };
 function onRemoveItems(event) {
   refs.collectionBoxesEl.innerHTML = "";
-}
+  refs.inputEl.value = "";
+};
 
 
