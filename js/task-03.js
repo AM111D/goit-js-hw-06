@@ -15,12 +15,10 @@ const images = [
 
 
 const gallaryEl = document.querySelector('.gallery');
-// console.log(gallaryEl);
 let stringforHTML = '';
 
 let imagesArr = images.forEach(image => {
   stringforHTML += `<li class="galary__list"><img src="${image.url}" alt="${image.alt}" width="300px"></li>`
-  return stringforHTML;
 });
 
 console.log(stringforHTML);

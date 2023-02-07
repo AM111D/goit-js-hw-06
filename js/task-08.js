@@ -6,10 +6,6 @@ formEl.addEventListener('submit', handleSubmit);
 
     function handleSubmit(event) {
         event.preventDefault();
-
-        const formData = new FormData(event.currentTarget);
-        console.log(formData);
-
    
         let email = formEl.elements.namedItem('email').value;
         let password = formEl.elements.namedItem('password').value;
